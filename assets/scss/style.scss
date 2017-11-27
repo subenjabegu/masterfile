@@ -1,0 +1,77 @@
+@import "../bourbon/_bourbon.scss";
+@import "_svj.scss";
+/*--========================= VARIABLES --*/
+$theme: #489293;
+$prime: #444444;
+$sec: #777777;
+$tert: #888888;
+$w: #ffffff;
+$b: #000000;
+$a: royalblue;
+
+/*--========================= MIXINS --*/
+@mixin transit($time){
+  -webkit-transition: ttime ease-in-out;
+  -moz-transition: $time ease-in-out;
+  -o-transition: $time ease-in-out;
+  transition: $time ease-in-out;
+}
+@mixin object-center($height, $width) {
+  height: $height;
+  object-fit: cover;
+  object-position: center;
+  width: $width;
+}
+@mixin object-top($height, $width) {
+  height: $height;
+  object-fit: cover;
+  object-position: top;
+  width: $width;
+}
+
+
+/*--========================= BASE STYLES --*/
+p {
+  color: $sec;
+  font-size: 16px;
+  line-height: 1.6;
+}
+h1 {
+  font-size: 36px;
+}
+h2 {
+  font-size: 30px;
+}
+h3 {
+  font-size: 24px;
+}
+h4 {
+  font-size: 18px;
+}
+h5 {
+  font-size: 14px;
+}
+h6 {
+  font-size: 12px;
+}
+
+
+/*--========================================= MAIN STYLES --*/
+
+/*--========================= Theme Objects --*/
+.b-padding {
+  padding: 62px 0;
+}
+.btn-theme {
+  background: $theme;
+  border: 2px solid $theme;
+  color: $w;
+  display: inline-block;
+  padding: 12px 42px;
+  &:hover {
+    background: $prime;
+    color: $w;
+    text-decoration: none;
+    @include transit(.43s);
+  }
+}

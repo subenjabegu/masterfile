@@ -1,0 +1,66 @@
+/*--========================= MIXINS --*/
+@mixin transit($time){
+  -webkit-transition: ttime ease-in-out;
+  -moz-transition: $time ease-in-out;
+  -o-transition: $time ease-in-out;
+  transition: $time ease-in-out;
+}
+@mixin object-center($height, $width) {
+  height: $height;
+  object-fit: cover;
+  object-position: center;
+  width: $width;
+}
+@mixin object-top($height, $width) {
+  height: $height;
+  object-fit: cover;
+  object-position: top;
+  width: $width;
+}
+
+.img-full {
+  height: auto;
+  width: 100%;
+}
+
+/*--========================= FLEX --*/
+.svj-flex {
+  align-items: center;
+  display: flex;
+}
+.svj-flex-just {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+
+/*--========================= POSITIONS --*/
+.p-rel {
+  position: relative;
+}
+.p-abs {
+  position: absolute;
+}
+.p-fixed {
+  position: fixed;
+}
+
+/*--========================= ALIGNMENTS --*/
+.align-right {
+
+}
+.align-left {
+
+}
+
+/*--========================= TEXT ALIGNMENTS --*/
+.text-center {
+  text-align: center;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}

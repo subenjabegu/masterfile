@@ -1,0 +1,83 @@
+/*--========================= MIXINS --*/
+.img-full {
+  height: auto;
+  width: 100%; }
+
+/*--========================= FLEX --*/
+.svj-flex {
+  align-items: center;
+  display: flex; }
+
+.svj-flex-just {
+  align-items: center;
+  display: flex;
+  justify-content: center; }
+
+/*--========================= POSITIONS --*/
+.p-rel {
+  position: relative; }
+
+.p-abs {
+  position: absolute; }
+
+.p-fixed {
+  position: fixed; }
+
+/*--========================= ALIGNMENTS --*/
+/*--========================= TEXT ALIGNMENTS --*/
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+/*--========================= VARIABLES --*/
+/*--========================= MIXINS --*/
+/*--========================= BASE STYLES --*/
+p {
+  color: #777777;
+  font-size: 16px;
+  line-height: 1.6; }
+
+h1 {
+  font-size: 36px; }
+
+h2 {
+  font-size: 30px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 14px; }
+
+h6 {
+  font-size: 12px; }
+
+/*--========================================= MAIN STYLES --*/
+/*--========================= Theme Objects --*/
+.b-padding {
+  padding: 62px 0; }
+
+.btn-theme {
+  background: #489293;
+  border: 2px solid #489293;
+  color: #ffffff;
+  display: inline-block;
+  padding: 12px 42px; }
+  .btn-theme:hover {
+    background: #444444;
+    color: #ffffff;
+    text-decoration: none;
+    -webkit-transition: ttime ease-in-out;
+    -moz-transition: 0.43s ease-in-out;
+    -o-transition: 0.43s ease-in-out;
+    transition: 0.43s ease-in-out; }
+
+/*# sourceMappingURL=style.css.map */
